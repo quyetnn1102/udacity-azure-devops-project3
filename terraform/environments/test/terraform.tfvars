@@ -1,8 +1,8 @@
 # Azure subscription vars
-subscription_id = ""
-client_id = ""
-client_secret = ""
-tenant_id = ""
+subscription_id = "a9ab978b-a5d4-42b1-a453-fe2690ceb40f"
+client_id = "9945ec09-7b3b-4bef-838b-42294c8d700b"
+client_secret = "bT48Q~XDV6wA4BJQ4Mfn2YuxMje18ATvPZwegdCs"
+tenant_id = "f958e84a-92b8-439f-a62d-4f45996b6d07"
 
 # Resource Group/Location
 location = "East US"
@@ -18,7 +18,7 @@ address_prefix_test = "10.5.1.0/24"
 # VM
 admin_username = "vm_admin"
 admin_password = "Fsoft@1234"
-public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDXtNUBYh+wUNcuLLAGVCWYQIpRF0khtznJmFoBSvPqb6QUZNL0xVb/3brU2eSEP3u1ajfk074wv/Qe+W0acCG22cSfRYFb8YBjpwMsEuMMDgPZs238a8ExsMeXbUeOw+JAWVNz0OgBRik4OL4sMZzpnXqPyB2ZhM3AB6wAfUp56SxRch9PKvPLenjRdVwI4zFNXLYBwQ3zOSd2n6GodbqmGngSA5DtGsf8lICd4wnz1r9J9fJ+HLUePbCyRVRwxNm4GnPl0nXYWfpVYLW2MUc0QNVJAJ8rIDuQHCdHJ08qzLjGdLlLTr7Y3dDiAf85sxBI6lnp9BAwGV04iuUT0d2t9i12Y7DSKSdS5PCAS0h6a5kC/duNewk3Qst0RaOH1Ia7qo04RGuquucV2bkInWV2uOCc0IsD+RPG9CtOb8ctQBwRw2SaGGjE4v0tyPKwtstY5ZVD5ZYWodKkeiOGRyFzf4z9q65ScKOo3og8DpPWvAYySLzLnWoU3rEzGzAxLKs= odl_user@SandboxHost-638536862762395844"
+public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDgxS+rThA6jA+zL1qSEw9jZkTvTlxchfsr2coCfaGC8BpiriNrcEGAM2wwebiqPEhGt+QxJ/W1ePH34R+D4nBQiq4GhaN2S2A15BHN/i4psOVUzVSPyioYvchkamzH8ehFk+o7i6XWKCF+ArWUiNg9W9AqIck7k9KLTKvhxO23WFJD+FFhvpUXbzZtUEV1UiFHDcaf+E8Tl+OZuDDZ7nAN32BRXKA4rUtU8CJw23N/T+nj2IkzhJq77fFGCrGjIw9H90EK65z/puZbkKYnXW95rl2o4jVdBNP2CtSQyw70sqE1AxElkJ+DYZbIknWRrE8qDbC7EcraodLKxwTuT+XcciV+fxOBIKpxTedGdNm7teg+dKjQjOlonsPsp8RMeGUJUeL6gIO7/yiTlm3KDfQ5w4nWnZ5ziT7FV7/9kedWQmKJnF9DGmKHyRPoDl7FkgxoddzU/HO7EEZX+0+GH9e+miyqM6GjNbNubwn+22mBviK1X5PyV4UqBwzi5F8RTVU= odl_user@SandboxHost-638552096572583277"
 
 #public key on pipeline
 public_key_path = "/home/vsts/work/_temp/id_rsa.pub"

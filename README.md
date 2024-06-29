@@ -20,8 +20,8 @@ In this project, you'll develop and demonstrate your skills in using a variety o
 
 
 ## Terraform
-1.  Clone source repo
-2.  Open a Terminal and connect to your Azure Account and get the Subscription ID
+1.  Clone source code from Github repo
+2.  Open a Terminal and connect to your Azure account to get the Subscription ID
 ```
 	az login 
 	az account list --output table
@@ -31,7 +31,7 @@ In this project, you'll develop and demonstrate your skills in using a variety o
 ```
     terraform/environments/test/configure-tfstate-storage-account.sh
 ```
-4. Copy the storage_account_name, container_name, access_key and fill to terraform/environments/test/main.tf
+4. Copy the storage_account_name, container_name, and access_key, and update the corresponding values in terraform/environments/test/main.tf accordingly.
 
 ```
 terraform  {
@@ -44,11 +44,12 @@ terraform  {
 }
 ```
 
-5. Create a Service Principal for Terraform
+5. Create a Service Principal for Terraform using the command below:
 ```
 az ad sp create-for-rbac --role Contributor --scopes /subscriptions/<your-subscription-id> --query "{ client_id: appId, client_secret: password, tenant_id: tenant }" 
 ```
-copy the command output and fill to terraform/environments/test/terraform.tfvars
+copy the command output and update the corresponding values in terraform/environments/test/terraform.tfvars.
+
 ```
 # Azure subscription vars
 subscription_id = "xxxxxxxxxxxx"
@@ -58,7 +59,7 @@ tenant_id = "xxxxxxxxxxxx"
 ```
 
 
-6. create a SSH key and also perform a keyscan of your github to get the known hosts.
+6. Generate an SSH key and perform a keyscan of your GitHub to obtain the known hosts.
 ```
 ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
@@ -68,7 +69,7 @@ cat ~/.ssh/id_rsa.pub
 ## Azure DevOps Pipeline
 
 1. Go to https://dev.azure.com/, create new project
-2. Install these Extensions :
+2. Install below extensions :
 
 |Extensions|Link|
 |--|--|
@@ -90,7 +91,7 @@ cat ~/.ssh/id_rsa.pub
 
 ![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/create_agent_pool.png?raw=true)
 
-5. Create a VM to use as Agent
+5. Create a VM to use as an Agent
 ![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/create_agent_vm.png?raw=true)
 
 6. Back to Azure Devops, Click to New Agent, copy the command, SSH to the VM and setup connection, make sure the Agent online:
