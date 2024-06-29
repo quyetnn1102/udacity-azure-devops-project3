@@ -13,11 +13,11 @@ pool: myAgentPool
 variables:
   python.version: '3.7.6'
   # ToDo: Replace the service connection name as used in the DevOps project settings
-  azureServiceConnectionId: 'azureudacity'
+  azureServiceConnectionId: 'myAzureServiceConnection'
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
   # Environment name
-  environmentName: 'test'
+  environmentName: 'VM_TEST'
 
 stages:
 #--------------------------------------------#
@@ -158,7 +158,7 @@ stages:
   # ToDo: Provide <environment name> you created in your DevOps project
   - deployment: FakeRestAPI
     displayName: Deploy FakeRestAPI Web App
-    environment: 'test'   # ToDo
+    environment: 'VM_TEST'   # ToDo
     strategy:
       runOnce:
         deploy:
@@ -166,8 +166,9 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App'
             inputs:
-              azureSubscription: 'azureudacity'     # ToDo
+              azureSubscription: 'myAzureServiceConnection'     # ToDo
               appName: 'project3-AppService'       # ToDo
+              resourceGroupName: 'Azuredevops5' 
               appType: webApp
               package: $(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip       # ToDo: Use the published zip artifact.
               deploymentMethod: auto
@@ -213,7 +214,7 @@ stages:
   - deployment: VMDeploy
     displayName: Selenium Tests
     environment:
-      name:  'test'       # ToDo: Change/provide a name
+      name:  'VM_TEST'       # ToDo: Change/provide a name
       resourceType: VirtualMachine
       tags: selenium
     strategy:
