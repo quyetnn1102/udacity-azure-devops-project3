@@ -167,7 +167,7 @@ stages:
             displayName: 'Deploy Azure Web App'
             inputs:
               azureSubscription: 'azureudacity'     # ToDo
-              appName: 'myApplication-AppService'       # ToDo
+              appName: 'project3-AppService'       # ToDo
               appType: webApp
               package: $(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip       # ToDo: Use the published zip artifact.
               deploymentMethod: auto
