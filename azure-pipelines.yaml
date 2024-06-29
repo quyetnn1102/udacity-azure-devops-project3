@@ -166,7 +166,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App'
             inputs:
-              azureSubscription: 'myAzureServiceConnection'     # ToDo
+              azureSubscription: '$(azureServiceConnectionId)'     # ToDo
               appName: 'project3-AppService'       # ToDo
               resourceGroupName: 'Azuredevops5' 
               appType: webApp
@@ -215,8 +215,7 @@ stages:
     displayName: Selenium Tests
     environment:
       name:  'VM_TEST'       # ToDo: Change/provide a name
-      resourceType: VirtualMachine
-      tags: selenium
+      resourceType: VirtualMachine      
     strategy:
       runOnce:
         deploy:
