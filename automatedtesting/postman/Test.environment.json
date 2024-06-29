@@ -1,0 +1,34 @@
+{
+	"id": "54d31641-73fd-4f54-bc94-a35e15850641",
+	"name": "Env.RegressionTest",
+	"values": [
+		{
+			"key": "url",
+			"value": "https://myapplication-appservice.azurewebsites.net/api",
+			"enabled": true
+		},
+		{
+			"key": "path",
+			"value": "Books",
+			"enabled": true
+		},
+		{
+			"key": "id",
+			"value": "3",
+			"enabled": true
+		},
+		{
+			"key": "name_book",
+			"value": "Book 3",
+			"enabled": true
+		},
+		{
+			"key": "name_book_up",
+			"value": "Book 3",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-06-11T07:11:00.813Z",
+	"_postman_exported_using": "Postman/10.24.26"
+}
