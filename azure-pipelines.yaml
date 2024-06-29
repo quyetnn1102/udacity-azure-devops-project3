@@ -195,7 +195,7 @@ stages:
           - task: ArchiveFiles@2
             displayName: 'Archive JMeter report'
             inputs:
-              rootFolderOrFile: '/home/namnm1/myagent/_work/2/drop-perftests/jmeter-html-report'
+              rootFolderOrFile: '/home/quyetnn/myagent/_work/2/drop-perftests/jmeter-html-report'
               includeRootFolder: false
               archiveType: 'zip'
               archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)-jmeter-report.zip'
@@ -241,11 +241,11 @@ stages:
                 pip3 install selenium
 
                 cd ~/
-                DIR=/home/namnm1/app
+                DIR=/home/quyetnn/app
                 if [ ! -d "$DIR" ]; then
                     mkdir app
                 fi
-                mv /home/namnm1/myagent/_work/1/drop-uitests/$(Build.BuildId)-uitests.zip app
+                mv /home/quyetnn/myagent/_work/1/drop-uitests/$(Build.BuildId)-uitests.zip app
                 cd app
                 unzip -o $(Build.BuildId)-uitests.zip
 
@@ -256,7 +256,7 @@ stages:
                 chromium-browser --product-version
                 /usr/local/bin/chromedriver -v
 
-                export PATH=$PATH:/home/namnm1/app
+                export PATH=$PATH:/home/quyetnn/app
                 echo "Starting Selenium Tests"
                 python3 add_remove_from_cart.py >> selenium.log
 
