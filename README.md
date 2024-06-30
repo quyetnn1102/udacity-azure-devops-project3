@@ -107,10 +107,10 @@ cat ~/.ssh/id_rsa.pub
 
 9. Go to Azure Pipeline > Environments > test > Add resource > Virtual machines
 10. Copy command, SSH to the VM then run copied command
-
-![vm_resources](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/vm_resource.png?raw=true) 
+![vm_resources](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/azure_pipeline_environment_test.png?raw=true) 
 
 11. After finished #10 go back to pipeline and re-run
+
 12. Now wait for pipeline to execute on the following Stages: Build > Deploy > Test
 ![pipeline_overview](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/pipeline_overview.png?raw=true)
 
@@ -160,13 +160,13 @@ The screenshots step-by-step:
 1. Log into Azure portal and go to the AppService that you have created.
 2. On the left-hand side, under **Monitoring**, click **Alerts**, then **New Alert Rule**.
 
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/law_add_resource.png?raw=true)
+![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/Analytics_Workspace_Scope.png?raw=true)
 
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/law_action.png?raw=true)
+![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/Analytics_Workspace_action.png?raw=true)
 
 3. Verify the resource is correct, then, click **Add a Condition** and choose **Http 404**.
 
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/law_condition_4xx.png?raw=true)
+![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/Analytics_Workspace_Condition.png?raw=true)
 
 4. Set the Threshold value of `1`. Then click **Done**.
 5. Create an action group and name
