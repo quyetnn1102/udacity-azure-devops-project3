@@ -1,6 +1,6 @@
 
 
-[![Build Status](https://dev.azure.com/odluser260641/udacityproject3namnm/_apis/build/status%2Fmanhnam91.udacity_devops_project_3?branchName=main)](https://dev.azure.com/odluser260641/udacityproject3namnm/_build/latest?definitionId=1&branchName=main)
+[![Build Status](https://dev.azure.com/udacityproject3devops/udacityazdevopsproject3/_apis/build/status%2Fquyetnn1102.udacity-azure-devops-project3?branchName=main)](https://dev.azure.com/udacityproject3devops/udacityazdevopsproject3/_apis/build/status%2Fquyetnn1102.udacity-azure-devops-project3?branchName=main)
 
 # Ensuring Quality Releases - Project Overview
 
