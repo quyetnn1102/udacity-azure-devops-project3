@@ -1,11 +1,11 @@
 # Azure subscription vars
-subscription_id = ""
-client_id = ""
-client_secret = ""
-tenant_id = ""
+subscription_id = "ad6befd3-6a77-4714-b24d-181b38cb2753"
+client_id = "ef9cf62a-bce8-4ee1-9e63-9cb56a563172"
+client_secret = "-6E8Q~MM4kdJLWRbdFesilVdOMxVNjSDKRM-NcFJ"
+tenant_id = "f958e84a-92b8-439f-a62d-4f45996b6d07"
 
 # Resource Group/Location
-location = "South Central US"
+location = "East US"
 resource_group = "Azuredevops3"
 application_type = "project3"
 
