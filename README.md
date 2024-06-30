@@ -2,6 +2,8 @@
 
 # Ensuring Quality Releases - Project Overview
 
+# Submitter: Quyet Nguyen
+
 In this project, you'll develop and demonstrate your skills in using a variety of industry leading tools, especially Microsoft Azure, to create disposable test environments and run a variety of automated tests with the click of a button. Additionally, you'll monitor and provide insight into your application's behavior, and determine root causes by querying the application’s custom log files.
 
 ![enter image description here](https://video.udacity-data.com/topher/2020/June/5ed816b3_screen-shot-2020-06-03-at-2.27.42-pm/screen-shot-2020-06-03-at-2.27.42-pm.png)
