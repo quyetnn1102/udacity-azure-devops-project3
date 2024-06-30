@@ -270,6 +270,10 @@ stages:
                 echo "Completed Selenium Tests. Check selenium.log for results."
                 cat selenium.log
 
+                sudo mkdir -p /var/log/selenium
+                sudo chmod 664 /var/log/selenium
+                sudo cp selenium.log /var/log/selenium/selenium.log 
+
 #--------------------------------------------#
 # TEST STAGE
 #--------------------------------------------#

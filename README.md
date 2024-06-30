@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/udacityproject3devops/udacityazdevopsproject3/_apis/build/status%2Fquyetnn1102.udacity-azure-devops-project3?branchName=main)](https://dev.azure.com/udacityproject3devops/udacityazdevopsproject3/_build/latest?definitionId=2&branchName=main)
+[![Build Status](https://dev.azure.com/udacityproject3azdevops/udacityazdevopsproject3/_apis/build/status%2Fquyetnn1102.udacity-azure-devops-project3?branchName=main)](https://dev.azure.com/udacityproject3azdevops/udacityazdevopsproject3/_build/latest?definitionId=1&branchName=main)
 
 # Ensuring Quality Releases - Project Overview
 
@@ -164,12 +164,12 @@ The screenshots step-by-step:
 ![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/law_condition_4xx.png?raw=true)
 
 4. Set the Threshold value of `1`. Then click **Done**.
-5. Create an action group and name it `myActionGroup`
+5. Create an action group and name
 6. Add “Send Email” for the Action Name, and choose **Email/SMS/Push/Voice** for the action type, and enter your email. Click **OK**.
 7. Name the alert rule `Http 404`, and leave the severity at `3`, then click **Create**.
 
 
-### Log Analytics
+### App Service Diagnostic Log Analytics Configuration
 
 1. Go to the App service, then **Diagnostic Settings** > **Add Diagnostic Setting**.
 2. Tick **AppServiceHTTPLogs** and **Send to Log Analytics Workspace** created in the previous step, then **Save**.
@@ -179,25 +179,27 @@ The screenshots step-by-step:
 
 ###  Set up log analytics workspace properly to get logs:
 
-1. Go to **Virtual Machines** and connect the VM created with Terraform to the Workspace (**Connect**).
-2. Wait until it shows **Connected**.
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/law_connect_vm.png?raw=true)
+1. Go to **Log Analytics Workspace** > Agent > Linux Servers > Log Analytics agent instructions > Copy command to onboard agent for Linux
+2. SSH the VM created with Terraform then run command from #1 to connect to the Workspace (**Connect**).
+3. Wait until it shows **Connected**.
+![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/Log_Analytics_Conected_VM.png?raw=true)
 
 ### Set up custom logging:
 
 1. In the log analytics workspace, go to **Tables** > **Create** > **New Custom Logs (MMA) > **Choose selenium.log File**.
    - Select the file `selenium.log` > **Next** > **Next**.
    - Enter the following paths as type Linux: `/var/log/selenium/selenium.log`.
-   - Give it a name (`selenium_logs_CL`) and click **Done**.
+   - Name it (`custom_selenium_logs_CL`) and click **Done**.
 
 2. Go to the App Service web page, navigate the links, and generate 404 not found errors (e.g., by visiting non-existent pages).
 
 3. After some minutes ( 3 to 10 minutes) , check the email inbox
 
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/email_alert.png?raw=true)
-
 ### Monitoring & Observability
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/law_query.png?raw=true)
+
+![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/Monitoring_Alert_Email.png?raw=true)
+
+![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/Log_Analytics_QueryLog404.png?raw=true)
 
 ![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/law_query_cl.png?raw=true)
 
