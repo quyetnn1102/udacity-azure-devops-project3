@@ -88,15 +88,18 @@ cat ~/.ssh/id_rsa.pub
 ![SV Con](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/ServiceConnection_Creation.png?raw=true)
 
 4. Go to Project Settings > Agent pools > Add pool
-![Agent](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/Agent Pool Creation.png?raw=true)
+
+![Agent](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/AgentPoolCreation.png?raw=true)
 
 5. Go to portal to create a VM to use as an Agent
-![VM](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/VM Agent Creation.png?raw=true)
 
-6. Back to Azure Devops, Click to New Agent then following the guidance there to setup connection to created VM and make sure the Agent online:
-![VMAC](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/VM Agent Config.png?raw=true)
+![VM](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/VMAgentCreation.png?raw=true)
 
-![APR](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/Agent Pool Running.png?raw=true)
+6. Back to Azure Devops MyAgentPool, Click to New Agent then following the guidance there to setup connection to created VM and make sure the Agent online:
+
+![VMAC](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/VMAgentConfig.png?raw=true)
+
+![APR](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/AgentPoolRunning.png?raw=true)
 
 7. Create a New Pipeline > select GitHub > Existing Azure Pipelines YAML file > Choose  **azure-pipelines.yaml**  file
 
@@ -105,11 +108,11 @@ cat ~/.ssh/id_rsa.pub
 9. Go to Azure Pipeline > Environments > test > Add resource > Virtual machines
 10. Copy command, SSH to the VM then run copied command
 
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/vm_resource.png?raw=true) 
+![vm_resources](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/vm_resource.png?raw=true) 
 
 11. After finished #10 go back to pipeline and re-run
 12. Now wait for pipeline to execute on the following Stages: Build > Deploy > Test
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/pipeline_overview.png?raw=true)
+![pipeline_overview](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/pipeline_overview.png?raw=true)
 
 The screenshots step-by-step:
 
