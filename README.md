@@ -179,10 +179,8 @@ The screenshots step-by-step:
 
 ###  Set up log analytics workspace properly to get logs:
 
-1. Go to **Log Analytics Workspace** > Agent > Linux Servers > Log Analytics agent instructions > Copy command to onboard agent for Linux
-2. SSH the VM created with Terraform then run command from #1 to connect to the Workspace (**Connect**).
-3. Wait until it shows **Connected**.
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/Log_Analytics_Conected_VM.png?raw=true)
+1. Go to **Log Analytics Workspace** > Go to Virtual Machines(deprecated) and Connect the created VM to the Workspace ( Connect). Just wait that shows `Connected`.
+![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/Log_Analytics_Conected_VM_2.png?raw=true)
 
 ### Set up custom logging:
 
@@ -201,5 +199,5 @@ The screenshots step-by-step:
 
 ![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/Log_Analytics_QueryLog404.png?raw=true)
 
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/law_query_cl.png?raw=true)
+![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/Log_Analytics_Custom_Log.png?raw=true)
 
