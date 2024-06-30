@@ -279,6 +279,15 @@ stages:
   - job: PostmanTest
     steps:
 
+    - task: Bash@3
+      displayName: Install Node.js and npm
+      inputs:
+        targetType: 'inline'
+        script: |
+          sudo apt-get update -y
+          sudo apt-get install curl -y
+          curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+          sudo apt-get install -y nodejs
     # Postman - Install Newman
     # ToDo: Update the command and verify the working directory
     - task: CmdLine@2
