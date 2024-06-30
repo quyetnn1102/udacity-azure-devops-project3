@@ -64,7 +64,7 @@ tenant_id = "xxxxxxxxxxxx"
 ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 ```
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/ssh-keygen.png?raw=true)
+![enter image description here](screenshots\ssh-keygen.png)
 
 ## Azure DevOps Pipeline
 
@@ -77,27 +77,27 @@ cat ~/.ssh/id_rsa.pub
 |PublishHTMLReports|https://marketplace.visualstudio.com/items?itemName=LakshayKaushik.PublishHTMLReports&targetId=625be685-7d04-4b91-8e92-0a3f91f6c3ac&utm_source=vstsproduct&utm_medium=ExtHubManageList|
 |Terraform|https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks&targetId=625be685-7d04-4b91-8e92-0a3f91f6c3ac&utm_source=vstsproduct&utm_medium=ExtHubManageList|
 
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/jmeter_addon.png?raw=true)
+![Jmeter add on](screenshots\jmeter_addon.png)
 
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/public_html_report_addon.png?raw=true)
+![html report add on](screenshots\public_html_report_addon.png)
 
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/terraform_addon.png?raw=true)
+![Terraform](screenshots\terraform_addon.png)
 
 3. Go to Project Settings > Pipelines > Service Connection > Azure Resource Manager > Service principal(manual), Create the new Service Connection
 
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/screate_service_connection.png?raw=true)
+![SV Con](screenshots\ServiceConnection_Creation.png)
 
 4. Go to Project Settings > Agent pools > Add pool
 
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/create_agent_pool.png?raw=true)
+![Agent](screenshots\Agent Pool Creation.png)
 
 5. Go to portal to create a VM to use as an Agent
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/create_agent_vm.png?raw=true)
+![VM](screenshots\VM Agent Creation.png)
 
 6. Back to Azure Devops, Click to New Agent then following the guidance there to setup connection to created VM and make sure the Agent online:
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/setup_agent.png?raw=true)
+![VMAC](screenshots\VM Agent Config.png)
 
-![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/run_agent.png?raw=true)
+![APR](screenshots\Agent Pool Running.png)
 
 7. Create a New Pipeline > select GitHub > Existing Azure Pipelines YAML file > Choose  **azure-pipelines.yaml**  file
 
