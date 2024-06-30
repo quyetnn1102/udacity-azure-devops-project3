@@ -270,9 +270,16 @@ stages:
                 echo "Completed Selenium Tests. Check selenium.log for results."
                 cat selenium.log
 
-                sudo mkdir -p /var/log/selenium
+                # Create the directory if it doesn't exist
+                if [ ! -d "/var/log/selenium" ]; then
+                  sudo mkdir -p /var/log/selenium
+                fi
+
+                # Set permissions for the directory
                 sudo chmod 664 /var/log/selenium
-                sudo cp selenium.log /var/log/selenium/selenium.log 
+
+                # Copy the log file and overwrite if it exists
+                sudo cp -f selenium.log /var/log/selenium/selenium.log
 
 #--------------------------------------------#
 # TEST STAGE
