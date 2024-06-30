@@ -189,7 +189,7 @@ The screenshots step-by-step:
 1. In the log analytics workspace, go to **Tables** > **Create** > **New Custom Logs (MMA) > **Choose selenium.log File**.
    - Select the file `selenium.log` > **Next** > **Next**.
    - Enter the following paths as type Linux: `/var/log/selenium/selenium.log`.
-   - Name it (`custom_selenium_logs_CL`) and click **Done**.
+   - Name it (`project3_selenium_logs_CL`) and click **Done**.
 
 2. Go to the App Service web page, navigate the links, and generate 404 not found errors (e.g., by visiting non-existent pages).
 
