@@ -68,7 +68,7 @@ cat ~/.ssh/id_rsa.pub
 
 ## Azure DevOps Pipeline
 
-1. Go to https://dev.azure.com/, create new project
+1. Go to https://dev.azure.com/ using Udacity provide account to create new AzureDevops project
 2. Install below extensions :
 
 |Extensions|Link|
@@ -83,7 +83,7 @@ cat ~/.ssh/id_rsa.pub
 
 ![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/terraform_addon.png?raw=true)
 
-3. Go to Project Settings > Pipelines > Service Connection, Create the new Service Connection
+3. Go to Project Settings > Pipelines > Service Connection > Azure Resource Manager > Service principal(manual), Create the new Service Connection
 
 ![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/screate_service_connection.png?raw=true)
 
@@ -91,10 +91,10 @@ cat ~/.ssh/id_rsa.pub
 
 ![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/create_agent_pool.png?raw=true)
 
-5. Create a VM to use as an Agent
+5. Go to portal to create a VM to use as an Agent
 ![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/create_agent_vm.png?raw=true)
 
-6. Back to Azure Devops, Click to New Agent, copy the command, SSH to the VM and setup connection, make sure the Agent online:
+6. Back to Azure Devops, Click to New Agent then following the guidance there to setup connection to created VM and make sure the Agent online:
 ![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/setup_agent.png?raw=true)
 
 ![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/run_agent.png?raw=true)
@@ -103,7 +103,7 @@ cat ~/.ssh/id_rsa.pub
 
 8. Run pipeline, when step "Selenium Tests_Deploy_vmtest"you can see error : "No resource found ...". you must Registration VM on environment Pipeline and you only need to run it once
 
-9. Go to Azure pipeline > Environments > test > Add resource > Virtual machines
+9. Go to Azure Pipeline > Environments > test > Add resource > Virtual machines
 10. Copy command, SSH to the VM > run copied command
 
 ![enter image description here](https://github.com/quyetnn1102/udacity-azure-devops-project3/blob/main/screenshots/vm_resource.png?raw=true) 
