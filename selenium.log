@@ -1,18 +1,76 @@
-2024-06-14 08:26:00:    Browser started successfully
-2024-06-14 08:26:07:    Login with username standard_user and password secret_sauce successfully.
-2024-06-14 08:26:07:    Test: adding items to cart
-2024-06-14 08:26:07:    Sauce Labs Bike Light added to shopping cart.
-2024-06-14 08:26:07:    Sauce Labs Bolt T-Shirt added to shopping cart.
-2024-06-14 08:26:07:    Sauce Labs Onesie added to shopping cart.
-2024-06-14 08:26:07:    3 items are all added to shopping cart successfully.
-2024-06-14 08:26:08:    Sauce Labs Bike Light removed from shopping cart.
-2024-06-14 08:26:08:    Sauce Labs Bolt T-Shirt removed from shopping cart.
-2024-06-14 08:26:08:    Sauce Labs Onesie removed from shopping cart.
-2024-06-14 08:26:08:    3 items are all removed from shopping cart successfully.
-2024-06-14 08:26:08:    Test: adding items to cart for check out
-2024-06-14 08:26:08:    Sauce Labs Bike Light added to shopping cart.
-2024-06-14 08:26:08:    Sauce Labs Bolt T-Shirt added to shopping cart.
-2024-06-14 08:26:08:    Sauce Labs Onesie added to shopping cart.
-2024-06-14 08:26:08:    3 items are all added to shopping cart successfully ready checkout.
-2024-06-14 08:26:10:    Thank you for your order! .Your order has been dispatched, and will arrive just as fast as the pony can get there!
-2024-06-14 08:26:10:    Selenium tests are all successfully completed!
+2024-06-30 13:52:36:    Starting the browser...
+2024-06-30 13:52:41:    Browser started successfully
+2024-06-30 13:52:42:    Login with username standard_user and password secret_sauce successfully.
+2024-06-30 13:52:42:    Test: adding items to cart
+2024-06-30 13:52:42:    Sauce Labs Bike Light added to shopping cart.
+2024-06-30 13:52:43:    Sauce Labs Bolt T-Shirt added to shopping cart.
+2024-06-30 13:52:43:    Sauce Labs Onesie added to shopping cart.
+2024-06-30 13:52:43:    3 items are all added to shopping cart successfully.
+2024-06-30 13:52:43:    Sauce Labs Bike Light removed from shopping cart.
+2024-06-30 13:52:43:    Sauce Labs Bolt T-Shirt removed from shopping cart.
+2024-06-30 13:52:43:    Sauce Labs Onesie removed from shopping cart.
+2024-06-30 13:52:43:    3 items are all removed from shopping cart successfully.
+2024-06-30 13:52:43:    Test: adding items to cart for check out
+2024-06-30 13:52:43:    Sauce Labs Bike Light added to shopping cart.
+2024-06-30 13:52:43:    Sauce Labs Bolt T-Shirt added to shopping cart.
+2024-06-30 13:52:44:    Sauce Labs Onesie added to shopping cart.
+2024-06-30 13:52:44:    3 items are all added to shopping cart successfully ready checkout.
+2024-06-30 13:52:44:    Thank you for your order! .Your order has been dispatched, and will arrive just as fast as the pony can get there!
+2024-06-30 13:52:44:    Selenium tests are all successfully completed!
+2024-06-30 15:16:53:    Starting the browser...
+2024-06-30 15:17:04:    Browser started successfully
+2024-06-30 15:17:06:    Login with username standard_user and password secret_sauce successfully.
+2024-06-30 15:17:06:    Test: adding items to cart
+2024-06-30 15:17:07:    Sauce Labs Bike Light added to shopping cart.
+2024-06-30 15:17:07:    Sauce Labs Bolt T-Shirt added to shopping cart.
+2024-06-30 15:17:07:    Sauce Labs Onesie added to shopping cart.
+2024-06-30 15:17:07:    3 items are all added to shopping cart successfully.
+2024-06-30 15:17:07:    Sauce Labs Bike Light removed from shopping cart.
+2024-06-30 15:17:07:    Sauce Labs Bolt T-Shirt removed from shopping cart.
+2024-06-30 15:17:07:    Sauce Labs Onesie removed from shopping cart.
+2024-06-30 15:17:07:    3 items are all removed from shopping cart successfully.
+2024-06-30 15:17:07:    Test: adding items to cart for check out
+2024-06-30 15:17:08:    Sauce Labs Bike Light added to shopping cart.
+2024-06-30 15:17:08:    Sauce Labs Bolt T-Shirt added to shopping cart.
+2024-06-30 15:17:08:    Sauce Labs Onesie added to shopping cart.
+2024-06-30 15:17:08:    3 items are all added to shopping cart successfully ready checkout.
+2024-06-30 15:17:09:    Thank you for your order! .Your order has been dispatched, and will arrive just as fast as the pony can get there!
+2024-06-30 15:17:09:    Selenium tests are all successfully completed!
+2024-06-30 15:34:52:    Starting the browser...
+2024-06-30 15:34:52:    Browser started successfully
+2024-06-30 15:34:53:    Login with username standard_user and password secret_sauce successfully.
+2024-06-30 15:34:53:    Test: adding items to cart
+2024-06-30 15:34:53:    Sauce Labs Bike Light added to shopping cart.
+2024-06-30 15:34:53:    Sauce Labs Bolt T-Shirt added to shopping cart.
+2024-06-30 15:34:53:    Sauce Labs Onesie added to shopping cart.
+2024-06-30 15:34:53:    3 items are all added to shopping cart successfully.
+2024-06-30 15:34:53:    Sauce Labs Bike Light removed from shopping cart.
+2024-06-30 15:34:54:    Sauce Labs Bolt T-Shirt removed from shopping cart.
+2024-06-30 15:34:54:    Sauce Labs Onesie removed from shopping cart.
+2024-06-30 15:34:54:    3 items are all removed from shopping cart successfully.
+2024-06-30 15:34:54:    Test: adding items to cart for check out
+2024-06-30 15:34:54:    Sauce Labs Bike Light added to shopping cart.
+2024-06-30 15:34:54:    Sauce Labs Bolt T-Shirt added to shopping cart.
+2024-06-30 15:34:54:    Sauce Labs Onesie added to shopping cart.
+2024-06-30 15:34:54:    3 items are all added to shopping cart successfully ready checkout.
+2024-06-30 15:34:55:    Thank you for your order! .Your order has been dispatched, and will arrive just as fast as the pony can get there!
+2024-06-30 15:34:55:    Selenium tests are all successfully completed!
+2024-06-30 15:46:40:    Starting the browser...
+2024-06-30 15:46:40:    Browser started successfully
+2024-06-30 15:46:41:    Login with username standard_user and password secret_sauce successfully.
+2024-06-30 15:46:41:    Test: adding items to cart
+2024-06-30 15:46:41:    Sauce Labs Bike Light added to shopping cart.
+2024-06-30 15:46:41:    Sauce Labs Bolt T-Shirt added to shopping cart.
+2024-06-30 15:46:41:    Sauce Labs Onesie added to shopping cart.
+2024-06-30 15:46:41:    3 items are all added to shopping cart successfully.
+2024-06-30 15:46:42:    Sauce Labs Bike Light removed from shopping cart.
+2024-06-30 15:46:42:    Sauce Labs Bolt T-Shirt removed from shopping cart.
+2024-06-30 15:46:42:    Sauce Labs Onesie removed from shopping cart.
+2024-06-30 15:46:42:    3 items are all removed from shopping cart successfully.
+2024-06-30 15:46:42:    Test: adding items to cart for check out
+2024-06-30 15:46:42:    Sauce Labs Bike Light added to shopping cart.
+2024-06-30 15:46:42:    Sauce Labs Bolt T-Shirt added to shopping cart.
+2024-06-30 15:46:42:    Sauce Labs Onesie added to shopping cart.
+2024-06-30 15:46:42:    3 items are all added to shopping cart successfully ready checkout.
+2024-06-30 15:46:43:    Thank you for your order! .Your order has been dispatched, and will arrive just as fast as the pony can get there!
+2024-06-30 15:46:43:    Selenium tests are all successfully completed!
