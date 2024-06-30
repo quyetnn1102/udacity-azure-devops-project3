@@ -187,6 +187,11 @@ stages:
                 wget "https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.2.1.tgz"
                 tar -xf apache-jmeter-5.2.1.tgz
                 unzip -o $(Build.BuildId)-perftests.zip
+                
+                DIR=/home/vm_user/_work/1/drop-perftests/jmeter-html-report
+                if [ ! -d "$DIR" ]; then
+                    rm -rf jmeter-html-report
+                fi
                 ./apache-jmeter-5.2.1/bin/jmeter -n -t PerformanceTestSuite.jmx -l jmeter.csv -e -f -o jmeter-html-report -j jmeter.log
           
                 # check
@@ -197,7 +202,7 @@ stages:
           - task: ArchiveFiles@2
             displayName: 'Archive JMeter report'
             inputs:
-              rootFolderOrFile: '/home/vm_user/_work/2/drop-perftests/jmeter-html-report'
+              rootFolderOrFile: '/home/vm_user/_work/1/drop-perftests/jmeter-html-report'
               includeRootFolder: false
               archiveType: 'zip'
               archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)-jmeter-report.zip'
@@ -216,7 +221,8 @@ stages:
     displayName: Selenium Tests
     environment:
       name:  'test'       # ToDo: Change/provide a name
-      resourceType: VirtualMachine      
+      resourceType: VirtualMachine
+      tags: selenium      
     strategy:
       runOnce:
         deploy:
