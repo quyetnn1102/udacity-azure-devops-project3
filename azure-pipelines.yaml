@@ -248,11 +248,11 @@ stages:
                 pip3 install selenium
 
                 cd ~/
-                DIR=/home/vm_user/app
+                DIR=/home/azurevmuser/app
                 if [ ! -d "$DIR" ]; then
                     mkdir app
                 fi
-                mv /home/vm_user/_work/1/drop-uitests/$(Build.BuildId)-uitests.zip app
+                mv /home/azurevmuser/_work/1/drop-uitests/$(Build.BuildId)-uitests.zip app
                 cd app
                 unzip -o $(Build.BuildId)-uitests.zip
 
@@ -263,7 +263,7 @@ stages:
                 google-chrome --product-version
                 /usr/local/bin/chromedriver -v
 
-                export PATH=$PATH:/home/vm_user/app
+                export PATH=$PATH:/home/azurevmuser/app
                 echo "Starting Selenium Tests"
                 python3 add_remove_from_cart.py >> selenium.log
 
