@@ -197,7 +197,7 @@ stages:
           - task: ArchiveFiles@2
             displayName: 'Archive JMeter report'
             inputs:
-              rootFolderOrFile: '/home/vm_user/myagent/_work/2/drop-perftests/jmeter-html-report'
+              rootFolderOrFile: '/home/vm_user/_work/2/drop-perftests/jmeter-html-report'
               includeRootFolder: false
               archiveType: 'zip'
               archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)-jmeter-report.zip'
@@ -246,7 +246,7 @@ stages:
                 if [ ! -d "$DIR" ]; then
                     mkdir app
                 fi
-                mv /home/vm_user/myagent/_work/1/drop-uitests/$(Build.BuildId)-uitests.zip app
+                mv /home/vm_user/_work/1/drop-uitests/$(Build.BuildId)-uitests.zip app
                 cd app
                 unzip -o $(Build.BuildId)-uitests.zip
 
